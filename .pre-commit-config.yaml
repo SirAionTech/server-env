@@ -77,6 +77,11 @@ repos:
     hooks:
       - id: eslint
         verbose: true
+        additional_dependencies:
+          - eslint
+          - eslint-plugin-jsdoc
+          - globals
+        language_version: 20.14.0
         args:
           - --color
           - --fix
